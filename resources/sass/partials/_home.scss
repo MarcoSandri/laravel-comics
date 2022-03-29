@@ -1,0 +1,34 @@
+.content {
+    background-color: $primary;
+    color: #fff;
+    position: relative;
+
+    .comics{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .label {
+      background-color: $secondary;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .title {
+      padding: 1rem 1.75rem;
+      position: absolute;
+      top: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      transform: translate(0, -50%);
+    }
+
+    .blue-button {
+      display: block;
+      margin: auto;
+      border: none;
+      font-size: 1.2rem;
+      padding: 0.75rem 3rem;
+      color: #fff;
+    }
+}

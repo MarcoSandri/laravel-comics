@@ -1,0 +1,22 @@
+.comicCard {
+    margin: 2rem auto;
+    width: 220px;
+    a {
+        text-decoration: none;
+        .comicImage {
+            height: 220px;
+            width: 220px;
+            img{
+                object-fit: cover;
+                object-position: top;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .text {
+            color: #fff;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+    }
+}

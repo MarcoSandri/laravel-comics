@@ -1,0 +1,144 @@
+.comicInfo {
+
+    .top {
+        background-color: $secondary;
+        height: 70px;
+
+        .container {
+            width: 60%;
+            margin: auto;
+            position: relative;
+
+            .cover {
+                position: absolute;
+                bottom: -35px;
+                border: 1px solid white;
+                height: 300px;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+
+                .label {
+                    background-color: #00a9d9;
+                    position: absolute;
+                    color: white;
+                    padding: 0.25rem;
+                    font-size: 0.8rem;
+
+                    &.type {
+                        top: 0;
+                        left: 0;
+                        text-transform: uppercase;
+                    }
+
+                    &.gallery {
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .info {
+        padding: 2rem 0;
+
+        .container {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+            .comic {
+                padding-right: 2rem;
+
+                h1 {
+                    text-transform: uppercase;
+                    color: #003f5e;
+                    padding: 1rem 0;
+                }
+
+                .price {
+                    background-color: #55ba59;
+                    border-bottom: 1px solid #357739;
+                    color: #b0fd9c;
+                    font-weight: bold;
+                    display: flex;
+
+                    .highlight {
+                        color: white;
+                    }
+
+                    .left {
+                        width: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1rem 2rem;
+                        border-right: 1px solid #357739;
+                    }
+
+                    .right {
+                        text-align: center;
+                        padding: 1rem 0;
+                        width: 30%;
+                        border-left: 1px solid #357739;
+                    }
+                }
+
+                p {
+                    color: $primary;
+                    padding: 2rem 0;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        background-color: #f6f6f6;
+        border: 1px solid lightgray;
+        min-height: 500px;
+        .container {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .half {
+                width: 48%;
+
+                h2 {
+                    padding: 2rem 0;
+                    color: #003f5e;
+                    border-bottom: 1px solid lightgray;
+
+                }
+
+                .list {
+                    border-bottom: 1px solid lightgray;
+                    font-size: 0.85rem;
+                    display: flex;
+                    padding: 1rem 0;
+
+                    .title {
+                        color: #003f5e;
+                        width: 30%;
+                    }
+
+                    .desc {
+                        width: 70%;
+                        a {
+                            color: #00a9d9;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
